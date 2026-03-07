@@ -1,0 +1,180 @@
+{
+    "providers": {
+        "anthropic": {
+            "name": "Anthropic",
+            "api_key_id": "AnthropicApiKey",
+            "class_name": "AnthropicModel"
+        },
+        "openai": {
+            "name": "OpenAI",
+            "api_key_id": "OpenaiApiKey",
+            "class_name": "OpenAIModel"
+        },
+        "deepseek": {
+            "name": "DeepSeek",
+            "api_key_id": "DeepseekApiKey",
+            "class_name": "DeepSeekModel"
+        },
+        "alibaba": {
+            "name": "Alibaba",
+            "api_key_id": "AlibabaApiKey",
+            "class_name": "AlibabaModel"
+        },
+        "google": {
+            "name": "Google",
+            "api_key_id": "GoogleApiKey",
+            "class_name": "GoogleModel"
+        },
+        "doubao": {
+            "name": "Doubao",
+            "api_key_id": "DoubaoApiKey",
+            "class_name": "DoubaoModel"
+        }
+    },
+    "models": {
+        "claude-sonnet-4-5-20250929": {
+            "name": "Claude 4.5 Sonnet",
+            "provider": "anthropic",
+            "supportsMultimodal": true,
+            "isReasoning": true,
+            "version": "20250929",
+            "description": "Claude Sonnet 4.5 版，兼具多模态理解与最新推理能力"
+        },
+        "claude-haiku-4-5": {
+            "name": "Claude 4.5 Haiku",
+            "provider": "anthropic",
+            "supportsMultimodal": true,
+            "isReasoning": true,
+            "version": "latest",
+            "description": "高性能的Claude 4 Sonnet模型，支持图像理解和思考过程"
+        },
+        "gpt-4o-2024-11-20": {
+            "name": "GPT-4o",
+            "provider": "openai",
+            "supportsMultimodal": true,
+            "isReasoning": false,
+            "version": "2024-11-20",
+            "description": "OpenAI的GPT-4o模型，支持图像理解"
+        },
+        "gpt-5-2025-08-07": {
+            "name": "GPT-5",
+            "provider": "openai",
+            "supportsMultimodal": true,
+            "isReasoning": true,
+            "version": "2025-08-07",
+            "description": "OpenAI旗舰级GPT-5模型，支持多模态输入与高级推理"
+        },
+        "gpt-5.1": {
+            "name": "GPT-5.1",
+            "provider": "openai",
+            "supportsMultimodal": true,
+            "isReasoning": true,
+            "version": "latest",
+            "description": "GPT-5.1 新版旗舰模型，强化长上下文与推理表现"
+        },
+        "gpt-5.2": {
+            "name": "GPT-5.2",
+            "provider": "openai",
+            "supportsMultimodal": true,
+            "isReasoning": true,
+            "version": "latest",
+            "description": "GPT-5.2 新版旗舰模型，强化长上下文与推理表现"
+        },
+        "gpt-5-mini": {
+            "name": "GPT-5-mini",
+            "provider": "openai",
+            "supportsMultimodal": true,
+            "isReasoning": false,
+            "version": "latest",
+            "description": "OpenAI的gpt-5-mini模型，支持图像理解和思考过程"
+        },
+        "deepseek-chat": {
+            "name": "DeepSeek-V3",
+            "provider": "deepseek",
+            "supportsMultimodal": false,
+            "isReasoning": false,
+            "version": "latest",
+            "description": "DeepSeek最新大模型，671B MoE模型，支持60 tokens/秒的高速生成"
+        },
+        "deepseek-reasoner": {
+            "name": "DeepSeek-R1",
+            "provider": "deepseek",
+            "supportsMultimodal": false,
+            "isReasoning": true,
+            "version": "latest",
+            "description": "DeepSeek推理模型，提供详细思考过程（仅支持文本）"
+        },
+        "qwen3-vl-flash": {
+            "name": "Qwen3-VL-Flash",
+            "provider": "alibaba",
+            "supportsMultimodal": true,
+            "isReasoning": false,
+            "version": "latest",
+            "description": "阿里通义千问VL-Flash模型，视觉理解能力最强，支持图像理解和复杂任务"
+        },
+        "qwen3-vl-plus": {
+            "name": "Qwen3-VL-Plus",
+            "provider": "alibaba",
+            "supportsMultimodal": true,
+            "isReasoning": false,
+            "version": "latest",
+            "description": "阿里通义千问VL-Plus模型，视觉理解能力最强，支持图像理解和复杂任务"
+        },
+        "qwen3.5-flash": {
+            "name": "Qwen3.5-Flash",
+            "provider": "alibaba",
+            "supportsMultimodal": true,
+            "isReasoning": false,
+            "version": "latest",
+            "description": "阿里通义千问VL-Flash模型，视觉理解能力最强，支持图像理解和复杂任务"
+        },
+        "qwen3.5-plus": {
+            "name": "Qwen3.5-Plus",
+            "provider": "alibaba",
+            "supportsMultimodal": true,
+            "isReasoning": false,
+            "version": "latest",
+            "description": "阿里通义千问VL-Flash模型，视觉理解能力最强，支持图像理解和复杂任务"
+        },
+        "gemini-2.5-pro": {
+            "name": "Gemini 2.5 Pro",
+            "provider": "google",
+            "supportsMultimodal": true,
+            "isReasoning": true,
+            "version": "latest",
+            "description": "Google最强大的Gemini 2.5 Pro模型，支持图像理解（需要付费API密钥）"
+        },
+        "gemini-2.5-flash": {
+            "name": "Gemini 2.5 Flash",
+            "provider": "google",
+            "supportsMultimodal": true,
+            "isReasoning": false,
+            "version": "latest",
+            "description": "Google最新的Gemini 2.5 Flash模型，支持图像理解，速度更快，性能更好"
+        },
+        "doubao-seed-1-6-251015": {
+            "name": "Doubao-Seed-1.6",
+            "provider": "doubao",
+            "supportsMultimodal": true,
+            "isReasoning": true,
+            "version": "latest",
+            "description": "支持 minimal/low/medium/high 四种不同思考长度模式、支持多模态、256K长上下文"
+        },
+        "doubao-seed-1-8-251228": {
+            "name": "Doubao-Seed-1.8",
+            "provider": "doubao",
+            "supportsMultimodal": true,
+            "isReasoning": true,
+            "version": "latest",
+            "description": "支持 minimal/low/medium/high 四种不同思考长度模式、支持多模态、256K长上下文"
+        },
+        "doubao-seed-2-0-pro-260215": {
+            "name": "Doubao-Seed-2.0",
+            "provider": "doubao",
+            "supportsMultimodal": true,
+            "isReasoning": true,
+            "version": "latest",
+            "description": "支持 minimal/low/medium/high 四种不同思考长度模式、支持多模态、256K长上下文"
+        }
+    }
+}
