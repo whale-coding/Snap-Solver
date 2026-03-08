@@ -186,14 +186,6 @@
             "version": "latest",
             "description": "支持 minimal/low/medium/high 四种不同思考长度模式、支持多模态、256K长上下文"
         },
-        "kimi-latest": {
-            "name": "Kimi Latest",
-            "provider": "kimi",
-            "supportsMultimodal": true,
-            "isReasoning": false,
-            "version": "latest",
-            "description": "月之暗面 Kimi 最新模型，支持图像理解和超长上下文"
-        },
         "kimi-k2.5": {
             "name": "Kimi K2.5",
             "provider": "kimi",

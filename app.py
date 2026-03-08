@@ -180,6 +180,10 @@ def create_model_instance(model_id, settings, is_reasoning=False):
             base_url = proxy_api_config.get('apis', {}).get('alibaba', '')
         elif "gemini" in model_id.lower() or "google" in model_id.lower():
             base_url = proxy_api_config.get('apis', {}).get('google', '')
+        elif "kimi" in model_id.lower() or "moonshot" in model_id.lower() or "k2" in model_id.lower():
+            base_url = proxy_api_config.get('apis', {}).get('kimi', '')
+        elif "glm" in model_id.lower() or "zhipu" in model_id.lower():
+            base_url = proxy_api_config.get('apis', {}).get('zhipu', '')
     
     # 从前端设置获取自定义API基础URL (apiBaseUrls)
     api_base_urls = settings.get('apiBaseUrls', {})
@@ -207,6 +211,14 @@ def create_model_instance(model_id, settings, is_reasoning=False):
                 base_url = custom_base_url
         elif "doubao" in model_id.lower():
             custom_base_url = api_base_urls.get('doubao')
+            if custom_base_url:
+                base_url = custom_base_url
+        elif "kimi" in model_id.lower() or "moonshot" in model_id.lower() or "k2" in model_id.lower():
+            custom_base_url = api_base_urls.get('kimi')
+            if custom_base_url:
+                base_url = custom_base_url
+        elif "glm" in model_id.lower() or "zhipu" in model_id.lower():
+            custom_base_url = api_base_urls.get('zhipu')
             if custom_base_url:
                 base_url = custom_base_url
     
