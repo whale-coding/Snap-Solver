@@ -29,6 +29,16 @@
             "name": "Doubao",
             "api_key_id": "DoubaoApiKey",
             "class_name": "DoubaoModel"
+        },
+        "kimi": {
+            "name": "Kimi",
+            "api_key_id": "KimiApiKey",
+            "class_name": "KimiModel"
+        },
+        "zhipu": {
+            "name": "Zhipu",
+            "api_key_id": "ZhipuApiKey",
+            "class_name": "ZhipuModel"
         }
     },
     "models": {
@@ -175,6 +185,46 @@
             "isReasoning": true,
             "version": "latest",
             "description": "支持 minimal/low/medium/high 四种不同思考长度模式、支持多模态、256K长上下文"
+        },
+        "kimi-latest": {
+            "name": "Kimi Latest",
+            "provider": "kimi",
+            "supportsMultimodal": true,
+            "isReasoning": false,
+            "version": "latest",
+            "description": "月之暗面 Kimi 最新模型，支持图像理解和超长上下文"
+        },
+        "kimi-k2.5": {
+            "name": "Kimi K2.5",
+            "provider": "kimi",
+            "supportsMultimodal": true,
+            "isReasoning": false,
+            "version": "preview",
+            "description": "Kimi K2.5 推理模型，具备强大的多模态和推理能力"
+        },
+        "glm-4.6v": {
+            "name": "GLM-4.6V",
+            "provider": "zhipu",
+            "supportsMultimodal": true,
+            "isReasoning": false,
+            "version": "latest",
+            "description": "智谱 GLM-4V-Plus 多模态模型，支持图像理解和复杂视觉任务"
+        },
+        "glm-4.6v-flashx": {
+            "name": "GLM-4.6V-FlashX",
+            "provider": "zhipu",
+            "supportsMultimodal": true,
+            "isReasoning": false,
+            "version": "latest",
+            "description": "智谱 GLM-4V-Plus 多模态模型，支持图像理解和复杂视觉任务"
+        },
+        "glm-4.6v-flash": {
+            "name": "GLM-4.6V-Flash",
+            "provider": "zhipu",
+            "supportsMultimodal": true,
+            "isReasoning": false,
+            "version": "latest",
+            "description": "智谱 GLM-4V-Flash 轻量视觉模型，速度更快，免费可用"
         }
     }
 }

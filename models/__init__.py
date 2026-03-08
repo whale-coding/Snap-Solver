@@ -5,6 +5,8 @@ from .deepseek import DeepSeekModel
 from .alibaba import AlibabaModel
 from .google import GoogleModel
 from .doubao import DoubaoModel
+from .kimi import KimiModel
+from .zhipu import ZhipuModel
 from .factory import ModelFactory
 
 __all__ = [
@@ -15,5 +17,7 @@ __all__ = [
     'AlibabaModel',
     'GoogleModel',
     'DoubaoModel',
+    'KimiModel',
+    'ZhipuModel',
     'ModelFactory'
 ]

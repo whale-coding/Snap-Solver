@@ -385,6 +385,8 @@ class SettingsManager {
             'AlibabaApiKey': '',
             'GoogleApiKey': '',
             'DoubaoApiKey': '',
+            'KimiApiKey': '',
+            'ZhipuApiKey': '',
             'BaiduApiKey': '',
             'BaiduSecretKey': '',
             'MathpixAppId': '',
@@ -398,7 +400,9 @@ class SettingsManager {
             'DeepseekApiBaseUrl': '',
             'AlibabaApiBaseUrl': '',
             'GoogleApiBaseUrl': '',
-            'DoubaoApiBaseUrl': ''
+            'DoubaoApiBaseUrl': '',
+            'KimiApiBaseUrl': '',
+            'ZhipuApiBaseUrl': ''
         };
         
         // 加载模型配置
@@ -918,6 +922,12 @@ class SettingsManager {
             }
             if (this.apiBaseUrlValues['DoubaoApiBaseUrl']) {
                 apiBaseUrls.doubao = this.apiBaseUrlValues['DoubaoApiBaseUrl'];
+            }
+            if (this.apiBaseUrlValues['KimiApiBaseUrl']) {
+                apiBaseUrls.kimi = this.apiBaseUrlValues['KimiApiBaseUrl'];
+            }
+            if (this.apiBaseUrlValues['ZhipuApiBaseUrl']) {
+                apiBaseUrls.zhipu = this.apiBaseUrlValues['ZhipuApiBaseUrl'];
             }
         }
         
@@ -2399,6 +2409,8 @@ class SettingsManager {
             'AlibabaApiKey': '',
             'GoogleApiKey': '',
             'DoubaoApiKey': '',
+            'KimiApiKey': '',
+            'ZhipuApiKey': '',
             'BaiduApiKey': '',
             'BaiduSecretKey': '',
             'MathpixAppId': '',
@@ -2501,7 +2513,9 @@ class SettingsManager {
                     'DeepseekApiBaseUrl': proxyApiConfig.apis?.deepseek || '',
                     'AlibabaApiBaseUrl': proxyApiConfig.apis?.alibaba || '',
                     'GoogleApiBaseUrl': proxyApiConfig.apis?.google || '',
-                    'DoubaoApiBaseUrl': proxyApiConfig.apis?.doubao || ''
+                    'DoubaoApiBaseUrl': proxyApiConfig.apis?.doubao || '',
+                    'KimiApiBaseUrl': proxyApiConfig.apis?.kimi || '',
+                    'ZhipuApiBaseUrl': proxyApiConfig.apis?.zhipu || ''
                 };
                 this.updateApiBaseUrlStatus(apiBaseUrls);
                 console.log('API基础URL状态已刷新');
@@ -2593,6 +2607,12 @@ class SettingsManager {
                     break;
                 case 'DoubaoApiBaseUrl':
                     config.apis.doubao = value;
+                    break;
+                case 'KimiApiBaseUrl':
+                    config.apis.kimi = value;
+                    break;
+                case 'ZhipuApiBaseUrl':
+                    config.apis.zhipu = value;
                     break;
             }
             

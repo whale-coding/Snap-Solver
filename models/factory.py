@@ -180,6 +180,26 @@ class ModelFactory:
                 model_name=model_name,
                 api_base_url=api_base_url
             )
+        # 对于Kimi模型，也需要传递正确的模型名称
+        elif 'kimi' in model_name.lower() or 'moonshot' in model_name.lower() or 'k2' in model_name.lower():
+            return model_class(
+                api_key=api_key,
+                temperature=temperature,
+                system_prompt=system_prompt,
+                language=language,
+                model_name=model_name,
+                api_base_url=api_base_url
+            )
+        # 对于智谱模型，需要传递正确的模型名称
+        elif 'glm' in model_name.lower() or 'zhipu' in model_name.lower():
+            return model_class(
+                api_key=api_key,
+                temperature=temperature,
+                system_prompt=system_prompt,
+                language=language,
+                model_name=model_name,
+                api_base_url=api_base_url
+            )
         # 对于Mathpix模型，不传递language参数
         elif model_name == 'mathpix':
             return model_class(

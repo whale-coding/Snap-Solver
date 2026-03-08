@@ -50,7 +50,9 @@ DEFAULT_API_BASE_URLS = {
     "DeepseekApiBaseUrl": "",
     "AlibabaApiBaseUrl": "",
     "GoogleApiBaseUrl": "",
-    "DoubaoApiBaseUrl": ""
+    "DoubaoApiBaseUrl": "",
+    "KimiApiBaseUrl": "",
+    "ZhipuApiBaseUrl": ""
 }
 
 def ensure_api_base_urls_file():
@@ -144,6 +146,10 @@ def create_model_instance(model_id, settings, is_reasoning=False):
         api_key_id = "GoogleApiKey"
     elif "doubao" in model_id.lower():
         api_key_id = "DoubaoApiKey"
+    elif "kimi" in model_id.lower() or "moonshot" in model_id.lower() or "k2" in model_id.lower():
+        api_key_id = "KimiApiKey"
+    elif "glm" in model_id.lower() or "zhipu" in model_id.lower():
+        api_key_id = "ZhipuApiKey"
     
     # 首先尝试从本地配置获取API密钥
     api_key = get_api_key(api_key_id)
