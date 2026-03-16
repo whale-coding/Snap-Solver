@@ -162,14 +162,6 @@
             "version": "latest",
             "description": "Google最新的Gemini 2.5 Flash模型，支持图像理解，速度更快，性能更好"
         },
-        "doubao-seed-1-6-251015": {
-            "name": "Doubao-Seed-1.6",
-            "provider": "doubao",
-            "supportsMultimodal": true,
-            "isReasoning": true,
-            "version": "latest",
-            "description": "支持 minimal/low/medium/high 四种不同思考长度模式、支持多模态、256K长上下文"
-        },
         "doubao-seed-1-8-251228": {
             "name": "Doubao-Seed-1.8",
             "provider": "doubao",
@@ -201,22 +193,6 @@
             "isReasoning": false,
             "version": "latest",
             "description": "智谱 GLM-4V-Plus 多模态模型，支持图像理解和复杂视觉任务"
-        },
-        "glm-4.6v-flashx": {
-            "name": "GLM-4.6V-FlashX",
-            "provider": "zhipu",
-            "supportsMultimodal": true,
-            "isReasoning": false,
-            "version": "latest",
-            "description": "智谱 GLM-4V-Plus 多模态模型，支持图像理解和复杂视觉任务"
-        },
-        "glm-4.6v-flash": {
-            "name": "GLM-4.6V-Flash",
-            "provider": "zhipu",
-            "supportsMultimodal": true,
-            "isReasoning": false,
-            "version": "latest",
-            "description": "智谱 GLM-4V-Flash 轻量视觉模型，速度更快，免费可用"
         }
     }
 }
