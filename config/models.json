@@ -82,14 +82,6 @@
             "version": "latest",
             "description": "GPT-5.1 新版旗舰模型，强化长上下文与推理表现"
         },
-        "gpt-5.2": {
-            "name": "GPT-5.2",
-            "provider": "openai",
-            "supportsMultimodal": true,
-            "isReasoning": true,
-            "version": "latest",
-            "description": "GPT-5.2 新版旗舰模型，强化长上下文与推理表现"
-        },
         "gpt-5.4": {
             "name": "GPT-5.4",
             "provider": "openai",
@@ -161,14 +153,6 @@
             "isReasoning": false,
             "version": "latest",
             "description": "Google最新的Gemini 2.5 Flash模型，支持图像理解，速度更快，性能更好"
-        },
-        "doubao-seed-1-8-251228": {
-            "name": "Doubao-Seed-1.8",
-            "provider": "doubao",
-            "supportsMultimodal": true,
-            "isReasoning": true,
-            "version": "latest",
-            "description": "支持 minimal/low/medium/high 四种不同思考长度模式、支持多模态、256K长上下文"
         },
         "doubao-seed-2-0-pro-260215": {
             "name": "Doubao-Seed-2.0",
